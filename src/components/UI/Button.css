@@ -1,0 +1,25 @@
+.button-container {
+  width: 5rem;
+  height: 2rem;
+  background: #5569f7 0% 0%;
+  box-shadow: inset 0px 0px 15px #ffffff91;
+  border-radius: 7px;
+  opacity: 1;
+  border: none;
+  color: white;
+  font-weight: 300;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-block {
+  width: 3rem;
+  height: 1rem;
+  font-size: 0.5rem;
+  box-shadow: none;
+  border-radius: 2px;
+}
+.icon {
+  margin-right: 0.3rem;
+}

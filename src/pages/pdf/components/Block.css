@@ -1,0 +1,37 @@
+.block-container {
+  display: flex;
+  height: max-content;
+  position: absolute;
+  width: 15rem;
+}
+.body-container {
+  background: #ffffff8c 0% 0% no-repeat padding-box;
+  border: 2px dashed #4025b1;
+  border-radius: 7px;
+  color: black;
+  font-size: 0.8rem;
+  font-weight: 400;
+  padding: 0.5rem;
+  opacity: 1;
+}
+
+.body-container div:first-child {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.blockA {
+  top: 4%;
+  right: 15%;
+}
+.blockB {
+  bottom: 2%;
+  right: 5%;
+}
+.type {
+  color: #4025b1;
+}
+.block-name {
+  font-size: 0.8rem;
+  font-weight: 500;
+}

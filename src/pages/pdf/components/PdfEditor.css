@@ -1,0 +1,20 @@
+.button-group {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+.pdf-content {
+  height: 73%;
+  width: 90%;
+}
+
+.export-button {
+  border: none;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 400;
+  background: #5569f7;
+  padding: 0.3rem 1.2rem;
+  border-radius: 7px;
+  float: right;
+}

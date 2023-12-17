@@ -1,0 +1,22 @@
+.second-part {
+  flex-direction: column;
+  text-align: center;
+  row-gap: 1rem;
+  align-items: center;
+  background-image: url("../../../assets/images/second-part1.svg"),
+    url("../../../assets/images/second-part2.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.second-titles {
+  margin-top: 1.5rem;
+}
+.second-titles div:first-child {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.second-title {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
