@@ -37,13 +37,13 @@
 .edit-button {
   background: white;
   border: none;
-  color: #7959d7;
+  color: var(--secondary-color);
   font-size: 1rem;
   font-weight: 400;
   border-radius: 25px;
-  padding: 0.3rem 2.5rem;
+  padding: 0.3rem 2rem;
   margin-top: 4rem;
-  cursor: pointer;
+  width: 7rem;
 }
 
 .edit-button:hover {
@@ -62,5 +62,14 @@
   border: none;
   background: transparent;
   color: white;
+}
+label {
+  display: flex;
+  justify-content: center;
+}
+#fileInput {
+  display: none;
+}
+.btn {
   cursor: pointer;
 }

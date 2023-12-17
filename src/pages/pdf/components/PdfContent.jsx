@@ -1,29 +1,7 @@
-import { useState } from "react";
 import { PdfEditor } from "./PdfEditor";
 import "./PdfContent.css";
 
 export const PdfContent = ({ isOpen }) => {
-  const [url, setUrl] = useState(null);
-
-  const handleFileChange = (event) => {
-    const file = event.target.files[0];
-
-    if (file) {
-      const reader = new FileReader();
-
-      reader.onload = (e) => {
-        // e.target.result contains the file content as ArrayBuffer
-        const bytes = new Uint8Array(e.target.result);
-        setUrl(bytes);
-
-        // Now you can perform further operations with the bytes, such as sending them to a server or processing them.
-      };
-
-      // Read the file as ArrayBuffer
-      reader.readAsArrayBuffer(file);
-    }
-  };
-
   return (
     <div className='body-content second-part'>
       <div className='second-titles'>
@@ -41,14 +19,9 @@ export const PdfContent = ({ isOpen }) => {
               Edit a PDF
             </span>
           </div>
-          <input
-            type='file'
-            onChange={handleFileChange}
-            style={{ marginTop: "8rem" }}
-          />
         </>
       ) : (
-        <PdfEditor url={url} />
+        <PdfEditor />
       )}
     </div>
   );

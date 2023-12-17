@@ -13,7 +13,7 @@
   color: white;
   font-size: 0.9rem;
   font-weight: 400;
-  background: #5569f7;
+  background: var(--accent-color);
   padding: 0.3rem 1.2rem;
   border-radius: 7px;
   float: right;

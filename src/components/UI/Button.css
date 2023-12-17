@@ -1,7 +1,7 @@
 .button-container {
   width: 5rem;
   height: 2rem;
-  background: #5569f7 0% 0%;
+  background: var(--accent-color) 0% 0%;
   box-shadow: inset 0px 0px 15px #ffffff91;
   border-radius: 7px;
   opacity: 1;
