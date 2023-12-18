@@ -8,6 +8,7 @@ import Button from "../../../components/UI/Button";
 import {
   addImageToDocument,
   addTextToDocument,
+  exportPdf,
 } from "../../../services/Utilities";
 import { usePdf } from "../../../context/PdfContext";
 import { toast } from "react-toastify";
@@ -45,12 +46,12 @@ export const PdfEditor = () => {
         <Button
           text='Text'
           icon={<BsTextareaT size={22} />}
-          action={() => addTextToDocument(pdfDocument)}
+          action={() => addTextToDocument(pdfDocument, pdfIframeRef)}
         />
         <Button
           text='Image'
           icon={<FiImage size={22} />}
-          action={() => addImageToDocument(pdfDocument)}
+          action={() => addImageToDocument(pdfDocument, pdfIframeRef)}
         />
       </div>
       <div className='pdf-content'>
@@ -60,7 +61,12 @@ export const PdfEditor = () => {
           title='pdf'
           id='pdfIframe'
         ></iframe>
-        <button className='export-button'>Export</button>
+        <button
+          className='export-button'
+          onClick={() => exportPdf(pdfDocument, pdfIframeRef)}
+        >
+          Export
+        </button>
       </div>
     </>
   );

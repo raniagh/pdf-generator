@@ -1,13 +1,16 @@
 .second-part {
   flex-direction: column;
   text-align: center;
-  row-gap: 1rem;
+  row-gap: 13rem;
   align-items: center;
   background-image: url("../../../assets/images/second-part1.svg"),
     url("../../../assets/images/second-part2.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+.openedEditor {
+  row-gap: 1rem;
 }
 .second-titles {
   margin-top: 1.5rem;

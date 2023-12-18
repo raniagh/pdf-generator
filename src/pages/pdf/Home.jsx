@@ -38,7 +38,7 @@ const Home = () => {
           </div>
 
           <div className={editClass} id='element2'>
-            <label htmlFor='fileInput' className='btn'>
+            <label htmlFor='fileInput' className={`${!isOpen && "btn"}`}>
               Edit a PDF
             </label>
             <input
